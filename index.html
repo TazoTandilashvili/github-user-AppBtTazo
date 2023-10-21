@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <script src="./app.js" defer></script>
+  <title>Frontend Mentor | GitHub user search app</title>
+</head>
+
+<body>
+  <div class="container  ">
+    <header class="git--head">
+      <h1 class="logo lightLogo">devfinder</h1>
+      <div class="theme--change">
+        <p class="theme themLight">dark</p>
+        <img id="mode--icon" src="./assets/icon-moon.svg" alt="sun icon">
+      </div>
+    </header>
+    <!-- search div -->
+    <div class="search--style ligthContainer  ">
+      <div class="search--icon">
+        <img class="magnifer" src="./assets/icon-search.svg" alt="magnifer icon">
+      </div>
+      <input class="search--input ligthContainer" type="text" placeholder="Search GitHub username…">
+      <div class="error displayNone">
+        <h5>No result</h5>
+      </div>
+      <button class="search--btn  ">Search</button>
+    </div>
+    <!-- user div -->
+    <div class="user ligthContainer lightContanerSection ">
+      <!-- user info panel -->
+      <div class="user--panel">
+        <div class="avatar">
+          <img id="logoimg" src="./assets/avatar.svg" alt="avatar logo">
+        </div>
+        <div class="user--info">
+          <h2 class="name all--text">The Octocat</h2>
+          <h3 class="nickname">@oct ocat</h3>
+          <h3 class="joined all--text">Joined 25 Jan 2011</h3>
+        </div>
+      </div>
+      <!-- user bio -->
+      <div class="user--bio">
+        <p class="bio all--text textColor">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+          volutpat mattis
+          eros.
+        </p>
+      </div>
+      <!-- working and folowing info -->
+      <div class="Profile--Insights">
+        <div class="insights--info">
+          <h3 class="repo all--text ">Repos</h3>
+          <h2 class="repoNum num all--text">8</h2>
+        </div>
+        <div class="insights--info">
+          <h3 class="follower all--text ">Followers</h3>
+          <h2 class="followeNum num all--text">3938</h2>
+        </div>
+        <div class="insights--info">
+          <h3 class="following all--text ">Following</h3>
+          <h2 class="followingNum num all--text">9</h2>
+        </div>
+      </div>
+      <!-- contact info -->
+      <div class="contact--info">
+        <div class="locations contact--style">
+          <img src="./assets/icon-location.svg" alt="location icon">
+          <h3 class="location all--text textColor">San Francisco</h3>
+        </div>
+        <div class="github--link contact--style">
+          <img src="./assets/icon-website.svg" alt="link icon">
+          <a id="link" class="github all--text textColor"
+            href="http://127.0.0.1:5500/index.html">https://github.blog</a>
+
+        </div>
+        <div class="twiter--link contact--style">
+          <img src="./assets/icon-twitter.svg" alt="link icon">
+          <h3 class="twiter notAvaliable">Not Available</h3>
+        </div>
+        <div class="company contact--style">
+          <img src="./assets/icon-company.svg" alt="company-icon">
+          <h3 class="company--name all--text textColor">@github</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

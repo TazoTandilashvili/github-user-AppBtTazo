@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /* light theme */
+    --lightThemeBg: #F6F8FF;
+    --whiteColor: #fff;
+    --buttonColor: #0079FF;
+    --lightInfoBg: #0079FF;
+    --lightTextColor: #4B6A9B;
+    --logoColor: #222731;
+    /* dark theme color */
+    --darkThemeBg: #141D2F;
+    --divColor: #1E2A47;
+
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    height: 100vh;
+    background: #F6F8FF;
+
+}
+
+.container {
+    padding: 31px 24px 79px;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.git--head,
+.theme--change,
+.search--style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.git--head {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.lightLogo {
+    color: var(--logoColor);
+}
+
+.theme--change {
+    flex-direction: row;
+    column-gap: 16px;
+}
+
+.theme {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.themLight {
+    color: var(--lightTextColor);
+}
+
+.light--mode {
+    display: none;
+}
+
+.search--style {
+    margin-top: 36px;
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    column-gap: 8px;
+    justify-content: space-between;
+    padding: 0px 7px 0px 16px;
+    align-items: center;
+}
+
+.ligthContainer {
+    background: #fff;
+}
+
+.lightContanerSection {
+    background-color: #ffffff;
+}
+
+
+
+.magnifer {
+    width: 20px;
+    height: 20px;
+}
+
+.search--input {
+    width: 100%;
+    border: none;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #4B6A9B;
+    background-color: #FEFEFE;
+    font-family: 'Space Mono', monospace;
+    outline: none;
+}
+
+/* no user error */
+
+.error {
+    color: red;
+    text-align: center;
+}
+
+/* display none */
+.displayNone {
+    display: none;
+}
+
+
+.search--btn {
+    width: 84px;
+    height: 46px;
+    padding: 12.5px 14px 12.5px 18px;
+    background: var(--buttonColor);
+    border: none;
+    border-radius: 10px;
+    color: #ffff;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.user {
+    margin-top: 16px;
+    width: 100%;
+    padding: 32px 24px 48px 24px;
+    background: #ffff;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+
+.user--panel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    column-gap: 19px;
+}
+
+#logoimg {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.name {
+    color: #2B3442;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nickname {
+    color: #0079FF;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.joined {
+    color: #697C9A;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.user--bio {
+    margin-top: 35px;
+}
+
+.bio {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: start;
+}
+
+.Profile--Insights {
+    width: 100%;
+    margin-top: 23px;
+    background: var(--lightThemeBg);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 14px 19px 15px;
+
+}
+
+
+
+.insights--info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.insights--info h3 {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.num {
+    color: #2B3442;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* contact section */
+.contact--info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    row-gap: 16px;
+}
+
+.contact--style {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    column-gap: 13px;
+}
+
+.contact--style h3,
+a {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+.github {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    text-size-adjust: 100px;
+}
+
+
+.locations img {
+    margin-right: 7px;
+}
+
+.notAvaliable {
+    opacity: 50%;
+}
+
+
+
+
+/*--------------------------- dark theme --------------------- */
+/* dark theme bg color */
+.lightColor {
+    color: #FFF;
+}
+
+.dark-mode {
+    background-color: var(--darkThemeBg);
+}
+
+.darkTextColor {
+    color: #fff;
+}
+
+.darkContainer {
+    background-color: #1E2A47;
+    color: #fff;
+}
+
+.search--input::placeholder {
+    font-size: 13px;
+}
+
+.darkContainer::placeholder {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+
+/* tablet screen responsive */
+
+@media screen and (min-width: 768px) {
+
+    /* padding for planshet */
+    .container {
+        padding: 140px 98px 236px;
+    }
+
+    /* stykle for planshet */
+    .search--style {
+        padding: 0px 10px 0px 32px;
+        height: 69px;
+    }
+
+    .search--input::placeholder {
+        font-size: 18px;
+    }
+
+    .search--btn {
+        width: 104px;
+        height: 50px;
+        padding: 12.5px 23px 13.5px 24px;
+        font-size: 16px;
+    }
+
+    /* user container tablet style */
+    .user {
+        padding: 40px 40px 44px;
+        margin-top: 24px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .avatar {
+        width: 117px;
+        height: 117px;
+        object-fit: cover;
+    }
+
+    #logoimg {
+        width: 117px;
+        height: 117px;
+        border-radius: 50%;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+    .nickname {
+        font-size: 16px;
+    }
+
+    .joined,
+    .bio,
+    .contact--style h3,
+    contact--style a {
+        font-size: 15px;
+    }
+
+    .user--bio {
+        margin-top: 24px;
+    }
+
+    .Profile--Insights {
+        margin-top: 32px;
+        padding: 15px 0px 17px 32px;
+        justify-content: flex-start;
+        column-gap: 99px;
+    }
+
+    .insights--info h3 {
+        font-size: 13px;
+    }
+
+    .num {
+        font-size: 22px;
+        text-align: start;
+    }
+
+    /* contact display grid */
+    .contact--info {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+        margin-top: 32px;
+    }
+
+
+}
